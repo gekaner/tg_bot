@@ -1,0 +1,7 @@
+services:
+  redirect-bot:
+    build: .
+    container_name: redirect-bot
+    restart: unless-stopped
+    env_file:
+      - ./.env
